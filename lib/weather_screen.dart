@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:weather_app/additional_info_item.dart';
 import 'package:weather_app/hourly_forecast_item.dart';
 import 'package:http/http.dart' as http;
+import 'package:weather_app/secrets.dart';
 
 class WeatherScreen extends StatelessWidget {
   const WeatherScreen({super.key});
@@ -12,7 +13,7 @@ class WeatherScreen extends StatelessWidget {
     String cityName = 'London';
     http.get(
       Uri.parse(
-        'https://api.openweathermap.org/data/2.5/weather?q=$cityName&APPID=',
+        'https://api.openweathermap.org/data/2.5/weather?q=$cityName&APPID=$openWeatherAPIKey',
       ),
     );
   }
