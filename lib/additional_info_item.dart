@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Additional Info page style class.
 class AdditionalInfo extends StatelessWidget {
   final IconData icons;
   final String text;
